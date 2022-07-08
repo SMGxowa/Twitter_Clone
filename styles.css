@@ -10,6 +10,7 @@ body{
     
     
  }
+ /* Left-Sidebar */
  .sidebar{
  position: fixed;
  height: 100vh;
@@ -31,7 +32,13 @@ svg{
 .nav-link{
    color: rgb(231, 233, 234);
    padding: 10px;
-
+ 
+}
+.nav-item:hover{
+    background-color:rgb(20, 20, 20) ;
+    border-radius: 99999px;
+    width: 200px;
+   
 }
 .tweet-button{
     background-color: rgb(29, 155, 240);
@@ -49,6 +56,9 @@ svg{
     margin-bottom: 60px;
 
 }
+.tweet-button:hover{
+    background-color:rgb(24, 130, 200) ;
+}
 .button-text{
     color: #ffffff;
     text-decoration: none;
@@ -58,10 +68,24 @@ svg{
     color: #ffffff;
 }
 .profile{
-    margin-left: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
+.profile:hover{
+    background-color:rgb(20, 20, 20) ;
+    border-radius: 99999px;
+   
+}
+
+
 .profile span{
-    margin-left: 100px;
+    margin-left: 110px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 8px;
+
+
 }
 .profile strong{
     width: 33px;
@@ -76,6 +100,9 @@ svg{
     color: rgb(113, 118, 123);
 }
 
+/* .Left-Sidebar Ends */
+
+/* Main-Body Starts */
 .mainbody{
     margin-top: 20px;
     width: 566px;
@@ -99,6 +126,7 @@ svg{
 }
 .tweet-photo{
     margin-top: 20px;
+
 }
 .tweet-photo input{
     background-color: black;
@@ -132,10 +160,14 @@ svg{
     float: right;
   
 }
+.tweet-main-button:hover{
+    background-color:rgb(24, 130, 200) ;
+}
 .likes-icon span svg{
     fill: rgb(113, 118, 123);
     height: 16px;
     width: 16px;
+  
 }
 .likes-icon span {
     color:rgb(113, 118, 123) ;
@@ -147,7 +179,7 @@ svg{
 #see-more
 {
   color: rgb(29, 155, 240);
-
+  cursor: pointer;
 
 }
 #dismiss{
@@ -176,9 +208,18 @@ svg{
     color:rgb(113, 118, 123) ;
     font-size: 15px;
 }
-#dots{
+#more{
     float: right;
     color:rgb(113, 118, 123) ;
+    cursor: pointer;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 8px;
+}
+#more:hover{
+    color:rgb(29, 155, 240) ;
+    background-color:rgba(37, 68, 89, 0.537) ;
+    border-radius: 50%;
 }
 .caption{
     margin-left: 50px;
@@ -186,27 +227,54 @@ svg{
 }
 .comment-section{
     padding: 10px;
+    color: rgb(113, 118, 123);
+    font-size: 13px;
+    cursor: pointer;
 }
 .comment-section svg{
     fill:rgb(113, 118, 123) ;
     margin-left: 40px;
+    
 }
 #comment-icon svg{
     width: 19px;
     height: 19px;
+    cursor: pointer;
 }
 #retweet-icon svg, #heart-icon svg, #upload-icon svg{
     margin-left: 80px;
     width: 19px;
     height: 19px;
+    cursor: pointer;
    
 }
-#comment-nmbr, #retweet-nmbr, #heart-nmbr{
-    color: rgb(113, 118, 123);
-    font-size: 13px;
+#comment-icon svg:hover{
+    fill:rgb(24, 130, 200) ;
+   
+}
+#comment-icon:hover{
+    color:rgb(24, 130, 200) ;
+}
+#retweet-icon svg:hover{
+    fill: rgb(70, 138, 58);
+}
+#retweet-icon:hover{
+    color: rgb(70, 138, 58);
+}
+#heart-icon:hover{
+    color: rgb(214, 0, 143);
+}
+#heart-icon svg:hover{
+    fill: rgb(214, 0, 143);
+}
+#upload-icon svg:hover{
+    fill:rgb(24, 130, 200);
 }
 
-/* Right-sidebar */
+/* .Main-Body Ends */
+
+/* Right-Sidebar Starts */
+
 .search-div{
     border-radius: 99999px;
     background-color: rgba(32, 35, 39, 1);
@@ -227,15 +295,20 @@ svg{
     width:32px ;
     fill:rgb(113, 118, 123) ;
 }
+
+/* Trends-Div Start */
 .trends-div{
     border-radius: 10px;
-    background-color:rgba(32, 35, 39, 1);
+    background-color:rgba(22, 24, 28, 1);
     margin-top: 15px;
-    padding-bottom: 15px;
     width: 340px;
 }
 .main-trend{
     margin-bottom: 15px;
+    cursor: pointer;
+}
+.main-trend:hover{
+    background-color:rgb(30, 33, 37) ;
 }
 .trends-heading{
     color: rgb(231, 233, 234);
@@ -250,9 +323,20 @@ svg{
 }
 .trending-sa span{
     float: right;
-    padding-right: 15px;
     font-size: 13px;
+    margin-right: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 8px;
+ 
    
+}
+.trending-sa span:hover{
+    color:rgb(24, 130, 200) ;
+    background-color:rgba(37, 68, 89, 0.537) ;
+    border-radius: 50%;
+    
+  
 }
 .name-trend{
     color:rgb(231, 233, 234) ;
@@ -262,22 +346,45 @@ svg{
     color:rgb(113, 118, 123) ;
     font-size: 13px;
 }
+
+/* .Trends-Div Ends */
+
+/* Follow-Div Start */
 #handle-name-follow{
     margin-left: 50px;
     color:rgb(113, 118, 123)
 }
+#tweet-name br{
+    margin-left: 50px;
+}
 .follow-div{
+
     margin-top: 50px;
-    margin-right: 15px;
-    background-color:rgba(32, 35, 39, 1) ;
-    padding: 10px;
+    background-color:rgba(22, 24, 28, 1);
     border-radius: 10px;
+    width: 340px;
+ 
+    
+   
     
 }
 .follow-heading h3{
     color:rgb(231, 233, 234) ;
-    padding-left: 5px;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-bottom: 15px;
     font-size: 20px;
+}
+
+.follower{
+    cursor: pointer;
+    padding-right:30px;
+    padding-left: 20px;
+    padding-top: 1px;
+}
+
+.follower:hover{
+    background-color: rgb(30, 33, 37) ;    
 }
 .follow-button{
     background-color:rgb(231, 233, 234) ;
@@ -299,13 +406,23 @@ svg{
 
 #show-more{
     color: rgb(29, 155, 240);
-    padding-left: 15px;
-    padding-top: 15px;
+    cursor: pointer;
+    padding-top: 20px;
+    padding-bottom:20px ;
+    padding-left: 20px;
 }
+#show-more:hover{
+    background-color:rgb(30, 33, 37) ;
+}
+
+/* .Follow-Div Ends */
+
+/* Footer Starts */
 .footer{
     color: rgb(113, 118, 123);
     font-size: 13px;
-    margin-top: 15px;
+    padding-top: 20px;
+   
 }
 .footer span{
     color: rgb(113, 118, 123);
@@ -316,3 +433,6 @@ svg{
 .accesibility span{
     padding-right: 10px;
 }
+    /* .Footer-Ends */
+
+/* .Right-Sidebar Ends */
